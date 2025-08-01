@@ -12,7 +12,7 @@
 
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-sed -i 's_https\?://downloads.openwrt.org_https://mirrors.cernet.edu.cn/openwrt_' /etc/opkg/distfeeds.conf
+#sed -i 's_https\?://downloads.openwrt.org_https://mirrors.cernet.edu.cn/openwrt_' /etc/opkg/distfeeds.conf
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
