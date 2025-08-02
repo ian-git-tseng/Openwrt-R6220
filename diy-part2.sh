@@ -18,3 +18,11 @@
 
 # Modify hostname
 #sed -i 's/OpenWrt/P3TERX-Router/g' package/base-files/files/bin/config_generate
+# 验证补丁是否生效
+echo "=== 检查 DTS 修改 ==="
+if grep -q "read-only" target/linux/ramips/dts/mt7621_netgear_r6220.dts; then
+  echo "::error::DTS 修改未生效！"
+  exit 1
+else
+  echo "✅ DTS 修改已成功应用"
+fi
